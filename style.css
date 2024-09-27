@@ -1,0 +1,103 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 2px solid #007bff;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #4facfe;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff4081;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff79a3;
+}
+
+.weather-info {
+    margin-top: 20px;
+    display: none;
+    background: rgba(0, 123, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#cityName {
+    font-size: 24px;
+    color: #007bff;
+}
+
+#temperature {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+
+#description {
+    font-size: 18px;
+    color: #ff4081;
+    text-transform: capitalize;
+}
+
+/* Footer styling */
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ff4081;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
